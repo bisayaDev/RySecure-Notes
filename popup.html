@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Notes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="text-center justify-content-end mb-3">
+        <img src="images/icon128.png" width="80" alt="" srcset="" id="logo" style="border-radius: 13%;">
+    </div>
+    <h1 class="text-center my-4 text-primary">Ry-Secure Notes</h1>
+
+    <!-- Login Screen -->
+    <div id="loginScreen" class="card p-4">
+        <p class="card-text">Enter your password to access your notes:</p>
+        <div class="mb-3">
+            <input type="password" id="passwordInput" class="form-control" placeholder="Password">
+        </div>
+        <button id="loginButton" class="btn btn-primary mb-3">Login</button>
+        <p id="loginError" class="text-danger small"></p>
+        <p class="text-muted small">First time? Just set a password to get started.</p>
+    </div>
+
+    <!-- Notes Screen (Hidden by default) -->
+    <div id="notesScreen" style="display: none;">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <button id="manageGroupsButton" class="btn btn-outline-secondary btn-sm">Manage Groups</button>
+            <button id="logoutButton" class="btn btn-outline-secondary btn-sm">Logout</button>
+        </div>
+
+        <!-- Add Note Form -->
+        <div class="card p-3 mb-4">
+            <h5 class="card-title text-primary">Add a New Note</h5>
+            <div class="mb-3">
+                <textarea id="noteInput" class="form-control mb-2" rows="3" placeholder="Type your note here..."></textarea>
+                <div class="d-flex align-items-center">
+                    <label for="groupSelect" class="me-2">Group:</label>
+                    <select id="groupSelect" class="form-select">
+                        <option value="default">Default</option>
+                    </select>
+                </div>
+            </div>
+            <button id="saveNoteButton" class="btn btn-success">Save Note</button>
+        </div>
+
+        <!-- Group Tabs -->
+        <div class="mb-3">
+            <ul class="nav nav-pills" id="groupTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-group="default">Default</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-3">
+            <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search notes...">
+                <button id="clearSearchButton" class="btn btn-outline-secondary" type="button">Clear</button>
+            </div>
+        </div>
+
+        <!-- Notes List -->
+        <div class="notes-container">
+            <h5 class="mb-3 text-primary">
+                <span id="currentGroupLabel"></span> Notes
+                <span id="searchResults" class="badge bg-secondary ms-2" style="display: none;"></span>
+            </h5>
+            <div id="notesList" class="list-group"></div>
+        </div>
+    </div>
+
+    <!-- Manage Groups Modal -->
+    <div id="groupsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Manage Groups</h5>
+                <button type="button" class="close-button" id="closeGroupsModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="newGroupInput" class="form-label">Create New Group</label>
+                    <div class="d-flex">
+                        <input type="text" class="form-control me-2" id="newGroupInput" placeholder="Group name">
+                        <button id="addGroupButton" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h6>Existing Groups</h6>
+                    <ul class="list-group" id="groupsList">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Default -
+                            <span class="badge bg-primary mx-2">System</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
