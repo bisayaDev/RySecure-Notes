@@ -2,7 +2,7 @@
 
 A secure, password-protected note-taking Chrome extension with group organization and cross-device synchronization.
 
-![Secure Notes Screenshot](screenshots/secure-notes.png)
+![Secure Notes Screenshot](https://github.com/bisayaDev/RySecure-Notes/blob/master/images/icon128.png?raw=true)
 
 ## Features
 
@@ -60,11 +60,15 @@ A secure, password-protected note-taking Chrome extension with group organizatio
 2. Enter a password to secure your notes
 3. This password will be required for future access
 
+![](https://github.com/bisayaDev/RySecure-Notes/blob/master/images/Screenshots/login_screen.png?raw=true)
+
 ### Creating Notes
 
 1. After logging in, type your note in the text area
 2. Select a group from the dropdown (or use "Default")
 3. Click "Save Note" or press Ctrl+Enter
+
+![](https://github.com/bisayaDev/RySecure-Notes/blob/master/images/Screenshots/dashboard_screen1.png?raw=true)
 
 ### Managing Groups
 
@@ -72,6 +76,8 @@ A secure, password-protected note-taking Chrome extension with group organizatio
 2. Enter a group name and click "Add" to create a new group
 3. Click "Delete" next to any custom group to remove it
    - Notes in deleted groups are moved to the Default group
+   
+![](https://github.com/bisayaDev/RySecure-Notes/blob/master/images/Screenshots/manage_group.png?raw=true)
 
 ### Viewing Notes
 
@@ -79,12 +85,17 @@ A secure, password-protected note-taking Chrome extension with group organizatio
 2. Notes are displayed with newest at the top
 3. Each note shows its creation time and group
 
+![](https://github.com/bisayaDev/RySecure-Notes/blob/master/images/Screenshots/dashboard_screen2.png?raw=true)
+![](https://github.com/bisayaDev/RySecure-Notes/blob/master/images/Screenshots/dashboard_screen3.png?raw=true)
+
+
 ### Deleting Notes
 
 1. Click the "X" button on any note to delete it
 2. Confirm the deletion when prompted
 
 ## Developer Information
+Hi! I'm Ryan. I'm just curious and tried to create my own extension by the help of an AI.
 
 ### Project Structure
 
@@ -137,4 +148,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by [Ryan B.](https://www.facebook.com/www.faceebook.ph)
